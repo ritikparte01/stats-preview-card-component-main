@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: white; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: hsl(233, 47%, 7%);
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+    /* font-size: 15px; */
+}
+
+.main{
+    width: 1000px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border-radius: 5px;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    background: hsl(244, 38%, 16%);
+    padding: 50px;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+}
+
+h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+.main-para{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 30px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+
+.right{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient( rgba(67, 5, 105, 0.562),rgba(114, 0, 185, 0.411)), url(./images/image-header-desktop.jpg)center/cover;
+}
+
+.nums{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.nums p{
+    color:  hsla(0, 0%, 100%, 0.6);
+    font-size: 15px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+
+@media only screen and (min-width: 340px) and (max-width: 450px){
+
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+    .main{
+        flex-direction: column-reverse;
+        /* display: none; */
+        width: 80vw;
+        height: 90%;
+    }
+
+    .left{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+    .right{
+        width: 100%;
+        height: 300px;
+    }
+
+    .nums{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .nums h3{
+        margin-top: 10px;
+    }
+}
